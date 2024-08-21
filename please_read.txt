@@ -1,0 +1,39 @@
+GROQ_API_KEY = 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
+NVIDIA_API_KEY = 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
+
+
+#If You run this code plese save API  form read.txt to .env file 
+
+# Please dont share these API Key
+
+then Run commond
+
+docker compose up
+
+open this link http://localhost:7860 chat with data 
+
+
+prommpt Templete1 
+
+" Create a configuration file for a particle scattering experiment simulation. The file should include the following elements:
+Experiment name (e.g., "Sphere,large,mono") Parameters for various aspects of the experiment, each with:
+A descriptive name An enable/disable flag (ena_[ParamName]) A value (val_[ParamName])
+Include parameters for:
+Particle properties (e.g., Alpha, Ay1, Ay2, Az1, Az2, Az3, Base) Experimental setup (e.g., WAXS, Twinned) Particle interior and type (e.g., CBInterior, CBParticle) Peak characteristics (e.g., CBPeak) Physical properties (e.g., Azi, BFactor, Ceff, DebyeWaller) Detector properties (e.g., Det, PixelNoX, PixelNoY, PixelX, PixelY) Scattering properties (e.g., Qmax, Wavelength) Lattice properties (e.g., LType, HKLmax) Geometric properties (e.g., Radius, Length, SigX, SigY, SigZ) Rotation and orientation (e.g., RotAlpha, Ax1, Ax2, Ax3) Unit cell properties (e.g., uca, ucb, ucc, ucalpha, ucbeta, ucgamma)
+Include computation-related parameters:
+Calculation and preparation time (CalcTime, PrepTime) Grid points and beam position
+Output settings:
+PNG generation flag Number of images Output path
+Ensure that:
+Boolean values are represented as True/False Numeric values are provided without units Some parameters have descriptive comments in curly braces The enable/disable flags are set to either true or false The values are realistic for a particle scattering experiment
+Generate a comprehensive list of parameters similar to the example provided, maintaining the same format and level of detail. "
+
+prommpt Templete2
+" Create a configuration file for a scattering experiment similar to 'Sphere_large_mono.'. The file should include parameters for:
+Experiment name Various geometric and physical properties (e.g., Alpha, Ay1, Ay2, Az1, Az2, Az3, Base, Twinned, WAXS) Particle properties (e.g., CBInterior, CBParticle, CBPeak) Experimental setup (e.g., Det, PixelNoX, PixelNoY, PixelX, PixelY, Wavelength) Scattering-related parameters (e.g., Qmax, HKLmax, I0) Lattice and unit cell properties (e.g., LType, uca, ucb, ucc, ucalpha, ucbeta, ucgamma) Image generation settings (e.g., GridPoints, BeamPos, generatePNG) Output settings (e.g., number of images, output path)
+For each parameter, include:
+Whether it's enabled (ena_ParameterName=true/false) Its value (val_ParameterName=value)
+Use the format: Parameter description ena_ParameterName=true/false val_ParameterName=value Adjust the parameters and their values to suit your specific experiment. Include any additional parameters that might be relevant to your study."
+
+
+
